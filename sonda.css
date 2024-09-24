@@ -1,0 +1,315 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+footer {
+    background-color: #2C5364;
+    color: white; 
+    padding: 20px 10%; 
+    text-align: center; 
+    position: relative; 
+}
+
+footer h1 {
+    margin: 0 0 10px; 
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+.redes-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.redes-container a {
+    margin: 0 15px;
+    color: white; 
+    font-size: 32px; 
+    transition: transform 0.3s, color 0.3s; 
+}
+
+.redes-container a:hover {
+    transform: scale(1.2); 
+}
+
+.whatsapp-icon:hover {
+    color: #25D366; 
+}
+
+.facebook-icon:hover {
+    color: #1877F2; 
+}
+
+.instagram-icon:hover {
+    color: #C13584; 
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #2C5364, hsla(194, 35%, 19%, 0.438), hsla(198, 44%, 11%, 0.63)), url(../InnovaTec/Inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav >  a{
+    color: aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav >  a:hover{
+    text-decoration: underline;
+}
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 45px;
+    color: aliceblue;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: aliceblue;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.item img {
+    width: 40%; 
+    height: auto;
+}
+
+.contenedor-texto {
+    width: 50%; 
+}
+
+.contenedor-texto h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto p {
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+}
+
+.izquierda {
+    flex-direction: row; 
+}
+
+.derecha {
+    flex-direction: row-reverse; 
+}
+.contenedor-texto h3 span{
+    background: #2C5364;
+    color: aliceblue;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);   
+}
+.Portafolio {
+    background: #2C5364;
+}
+
+.Portafolio > h2 {
+    color: aliceblue;
+}
+
+.Galeria-Evidencias {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+}
+
+.imagen > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+.imagen:hover img {
+    transform: scale(1.1); 
+}
+
+.imagen:hover::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
+}
+
+
+.imagen:hover img {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(1.5); 
+    width: auto; 
+    height: auto;
+    max-width: 50%; 
+    max-height: 50%; 
+    z-index: 1001; 
+    transition: transform 0.3s ease; 
+}
+
+
+.imagen img {
+    transition: transform 0.3s ease; 
+}
+.Somos {
+    padding: 20px 10%; /* Espacio interior */
+    background-color: #f4f4f4; /* Color de fondo para la sección */
+}
+
+.title {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 28px; /* Tamaño de fuente del título */
+}
+
+.somos {
+    display: flex; /* Usar flexbox para el layout */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: center; /* Centrar elementos */
+}
+
+.somos-int {
+    flex: 0 0 30%; /* Cada integrante ocupa aproximadamente el 30% del ancho */
+    margin: 10px; /* Margen entre los integrantes */
+    background-color: white; /* Fondo blanco para cada integrante */
+    padding: 10px; /* Espacio interior para cada integrante */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centrar texto dentro de cada integrante */
+}
+
+/* Ajustar imagen para que sea responsive */
+.somos-int img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener proporciones */
+    border-radius: 50%; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* A partir de un tamaño de pantalla menor, ajustamos el tamaño de los integrantes */
+@media (max-width: 768px) {
+    .somos-int {
+        flex: 0 0 45%; /* En pantallas más pequeñas, los integrantes ocupan 45% */
+    }
+}
+
+@media (max-width: 480px) {
+    .somos-int {
+        flex: 0 0 100%; /* En pantallas muy pequeñas, cada integrante ocupa el 100% */
+    }
+}
+nav {
+    display: flex; /* Mostrar enlaces en línea */
+    justify-content: space-around; /* Espaciado entre enlaces */
+    background-color: #2C5364; /* Color de fondo del nav */
+    padding: 10px; /* Espaciado interior */
+    margin-left: auto; /* Empujar el nav hacia la derecha */
+}
+
+.nav-link {
+    position: relative; /* Necesario para el tooltip */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interior del enlace */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.nav-link:hover {
+    color: #FFD700; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos del tooltip */
+.tooltip {
+    display: none; /* Ocultar por defecto */
+    position: absolute; /* Posicionar absolutamente respecto al enlace */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo del tooltip */
+    color: white; /* Color del texto del tooltip */
+    padding: 15px; /* Aumentar el espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    white-space: normal; /* Permitir que el texto salte de línea */
+    max-width: 300px; /* Aumentar el ancho máximo del tooltip */
+    top: 100%; /* Posicionar justo debajo del enlace */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar para centrar */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    word-wrap: break-word; /* Permitir que las palabras largas se dividan */
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.nav-link:hover .tooltip {
+    display: block; /* Mostrar el tooltip */
+}
