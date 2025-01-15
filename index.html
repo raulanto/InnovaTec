@@ -1,150 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonda Multiparametrica</title>
-    <link rel="shortcut icon" href="Logo3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo3.png" type="image/x-icon">
+    <link href="src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="sonda.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="nav-link">Misión
-                <span class="tooltip">Brindar soluciones  tecnològicas innovadoras 
-                    y  accecibles en diversos sectores que contribuyan  a  la sostenibilidad</span>
-            </a>
-            <a href="#" class="nav-link">Visión
-                <span class="tooltip">Ser lideres en la creacion de dispositivos de medicion accecibles, precios y amigables con el ambiente en diversos sectores</span>
-            </a>
-            <a href="#" class="nav-link">Contactos
-                <span class="tooltip">9931817696</span>
-            </a>
-        </nav>
-        
-        <section class="textos-header">
-            <h1>Reduce costos y tiempo, mejora la rentabilidad y protege tu producción acuícola.</h1>
-            <h2>Optimiza tus recursos.</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
-            </svg>
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16"/>
+                </svg>
+            </div>
+            <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Mision</a></li>
+                <li>
+                    <a>Visión</a>
+                </li>
+                <li><a>Contactos</a></li>
+            </ul>
         </div>
-    </header>
-    <main>
-        <section class="contenedor">
-            <h2 class="title">Nuestro Producto</h2>
-                <div class="item izquierda">
-                    <img src="Problema.jpg" alt="Ejemplo de problema">
-                    <div class="contenedor-texto">
-                        <h3><span>1</span>Problema</h3>
-                        <p>Los métodos convencionales de medición son costosos y laboriosos.</p>
-                        <p>La falta de datos precisos y actualizados sobre las condiciones del agua.</p>
-                        <p>No contar con tecnologías</p>
-                    </div>
-                </div>
-            
-                <div class="item derecha">
-                    <img src="InnovaTec\impacto.png" alt="Imagen sobre el impacto">
-                    <div class="contenedor-texto">
-                        <h3><span>2</span>Impacto</h3>
-                        <p>Reducción del 70% los costos de adquisición y mantenimiento de sondas multiparamétricas.</p>
-                        <p>Reducción del 99% del tiempo requerido en la lectura parámetros y toma de decisión.</p>
-                        <p>Aumento del 95% en la rentabilidad respecto a la reducción de pérdidas por mortandad de peces.</p>
-                    </div>
-                </div>
-            
-                <div class="item izquierda">
-                    <img src="InnovaTec\Propuesta.png" alt="Imagen sobre propuesta">
-                    <div class="contenedor-texto">
-                        <h3><span>3</span>Propuesta</h3>
-                        <p>Dispositivo para monitorear calidad del agua.</p>
-                        <p>Adaptable a otras industrias y necesidades.</p>
-                        <p>Diseño compacto, ergonómico y económico.</p>
-                        <p>Integración con múltiples sensores.</p>
-                        <p>Visualización remota de datos.</p>
-                        <p>Interfaz de usuario intuitiva y con alertas.</p>
-                    </div>
-                </div>
-            </>
-            
+        <div class="avatar">
+            <div class="w-16 rounded-full">
+                <img src="lo.png" />
             </div>
-        </section>
-        
+        </div>
+        <a class="btn btn-ghost text-xl">Sonda Multiparametrica</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a>
+                <button onclick="my_modal_2.showModal()">Mision</button>
+            </a></li>
+            <li>
+                <a>
+                    <button onclick="my_modal_3.showModal()">Vision</button>
+                </a>
+            </li>
+            <li><a href="tel:+529931817696">Contactos</a></li>
 
-        <section class="Portafolio">
-            <h2 class="title">Evidencia</h2>
-            <div class="contendor">
-                <div class="Galeria-Evidencias">
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia1.jpg" alt="">
-                    </div>
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia2.jpg" alt="">
-                    </div>
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia3.jpg" alt="">
-                    </div>
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia4.jpg" alt="">
-                    </div>
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia5.jpg" alt="">
-                    </div>
-                    <div class="imagen"> 
-                        <img src="InnovaTec\Evidencias\Evidencia6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="Somos">
-            <h2 class="title">¿Quiénes somos?</h2>
-            <div class="somos">
-                <div class="somos-int">
-                    <img src="InnovaTec\Integrantes\Itzel_Palacios.jpg" alt="">
-                    <h3>Nombre: Itzel Palacios</h3>
-                    <p>CEO SM</p>
-                </div>
-                <div class="somos-int">
-                    <img src="InnovaTec\Integrantes\Brenda Adame.jpg" alt="">
-                    <h3>Nombre: Brenda Adame</h3>
-                    <p>Directora de finanzas</p>
-                </div>
-                <div class="somos-int">
-                    <img src="InnovaTec\Integrantes\Jose Custodio.jpg" alt="">
-                    <h3>Nombre: Jose Custodio</h3>
-                    <p>Infraestructura</p>
-                </div>
-                <div class="somos-int">
-                    <img src="InnovaTec\Integrantes\Emilio Mollinedo.jpg" alt="Emilio Mollinero">
-                    <h3>Nombre: Emilio Mollinero</h3>
-                    <p>Mercadotecnia</p>
-                </div>
-                <div class="somos-int">
-                    <img src="InnovaTec\Integrantes\Emanuel Zavala.jpg" alt="">
-                    <h3>Nombre: Emanuel Zavala</h3>
-                    <p>Control de calidad</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <h1>Contáctanos</h1>
-        <div class="redes-container">
-            <a href="https://wa.me/529931817696" target="_blank">
-                <i class="fab fa-whatsapp whatsapp-icon"></i>
-            </a>                
-            <a href="https://www.facebook.com/profile.php?id=61565882624931&mibextid=LQQJ4d" target="_blank">
-                <i class="fab fa-facebook-f facebook-icon"></i>
+        </ul>
+    </div>
+</div>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+            <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">Nuevo</span> <span class="text-sm font-medium">Sonda multiparametrica</span>
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Reduce costos y tiempo, mejora la rentabilidad y protege tu producción acuícola.</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Optimiza tus recursos. </p>
+        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Learn more
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="https://www.instagram.com/multisense0?igsh=MWRoNTVybTdpc3M3Zw== " target="_blank">
-                <i class="fab fa-instagram instagram-icon"></i>
+            <button class="btn" onclick="my_modal_5.showModal()">Mostrar Video</button>
+        </div>
+        <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+            <span class="font-semibold text-gray-400 uppercase">PRODUCTOS</span>
+            <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                    GrapfSensor
+                </a>
+                <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                    ApiSensor
+                </a>
+                <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
+        <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's create more tools and ideas that brings us together.</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.</p>
+            <a href="#" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                Get started
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">¿Quiénes somos?</h2>
+            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Un Equipo 100% Mexicano</p>
+        </div>
+        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+            <div class="text-center text-gray-500 dark:text-gray-400">
+                <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Integrantes\Itzel_Palacios.jpg" alt="Neil Avatar">
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="#">Itzel Palacios</a>
+                </h3>
+                <p>CEO SM</p>
+
+            </div>
+            <div class="text-center text-gray-500 dark:text-gray-400">
+                <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Integrantes\Brenda Adame.jpg" alt="Neil Avatar">
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="#">Brenda Adame</a>
+                </h3>
+                <p>Directora de finanzas</p>
+
+            </div>
+            <div class="text-center text-gray-500 dark:text-gray-400">
+                <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Integrantes\Jose Custodio.jpg" alt="Neil Avatar">
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="#">Jose Custodio</a>
+                </h3>
+                <p>Infraestructura</p>
+
+            </div>
+            <div class="text-center text-gray-500 dark:text-gray-400">
+                <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Integrantes\Emilio Mollinedo.jpg" alt="Neil Avatar">
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="#">Emilio Mollinero</a>
+                </h3>
+                <p>Mercadotecnia</p>
+
+            </div>
+            <div class="text-center text-gray-500 dark:text-gray-400">
+                <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Integrantes\Emanuel Zavala.jpg" alt="Neil Avatar">
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <a href="#">Emanuel Zavala</a>
+                </h3>
+                <p>Control de calidad</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<dialog id="my_modal_2" class="modal">
+    <div class="modal-box">
+        <h3 class="text-lg font-bold">Mision</h3>
+        <p class="py-4">Brindar soluciones tecnològicas innovadoras
+            y accecibles en diversos sectores que contribuyan a la sostenibilidad</p>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="my_modal_3" class="modal">
+    <div class="modal-box">
+        <h3 class="text-lg font-bold">Vision</h3>
+        <p class="py-4">Ser lideres en la creacion de dispositivos de medicion accecibles, precios y amigables con el
+            ambiente en diversos sectores</p>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="my_modal_5" class="modal">
+    <div class="modal-box">
+        <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <video controls width="600">
+            <source src="WhatsApp%20Video%202024-09-22%20at%202.32.18%20PM.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+</dialog>
 </body>
 </html>
